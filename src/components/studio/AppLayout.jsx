@@ -1,6 +1,8 @@
 import Header from './Header';
 import RibbonMenu from './RibbonMenu';
 import Toolbar from './Toolbar';
+import { useProject } from '../../context/ProjectContext';
+
 
 const AppLayout = ({ modelName, children }) => {
   // Placeholder callback handlers
@@ -15,7 +17,6 @@ const AppLayout = ({ modelName, children }) => {
     <div className="flex flex-col h-screen w-full bg-white">
       {/* Top Header */}
       <Header modelName={modelName} />
-
       {/* Ribbon Menu */}
       <RibbonMenu />
 
